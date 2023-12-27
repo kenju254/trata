@@ -1,7 +1,10 @@
 from flask import Flask
 
+#instance of the class Flask being initiated.
 app = Flask(__name__)
 
+#route decorate to define Flask URLs and methods defines the 
+#the HTTP methods allowed.
 @app.route('/hello/', methods=['GET', 'POST'])
 def welcome():
     return "Hello World!"
